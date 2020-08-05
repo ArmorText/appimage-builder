@@ -25,6 +25,7 @@ class AppImageToolCommand(Command):
         self.runtime_file = None
         self.update_information = None
         self.sign_key = None
+        self.sign_args = None
         self.target_file = target_file
         self.target_arch = None
 
@@ -48,6 +49,9 @@ class AppImageToolCommand(Command):
 
         if self.sign_key:
             command.extend(['--sign', '--sign-key', self.sign_key])
+
+        if self.sign_args:
+            command.extend(['--sign-args', self.sign_args])
 
         if self.update_information:
             command.extend(['--updateinformation', self.update_information])
