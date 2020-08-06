@@ -25,7 +25,7 @@ setuptools.setup(
     description="Recipe based AppImage creation meta-tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    scripts=['appimage-builder', 'appimage-modules', 'appimage-inspector'],
+    scripts=['appimage-builder', 'appimage-modules', 'appimage-inspector', 'appimage-tester'],
     url="https://github.com/AppImageCrafters/AppImageBuilder",
     project_urls={
         "Bug Tracker": "https://github.com/AppImageCrafters/AppImageBuilder/issues",
